@@ -32,6 +32,23 @@ class Player(pygame.sprite.Sprite):
         self.direction.y += self.gravity
         self.rect.y += self.direction.y
 
+    #geen idee waar dit moet staan, zoek een leuke plek
+    #Regelt dat je alleen kan jumpen vanaf de grond
+    #Player1.rect.y += 1
+    #if Player1.rect.colliderect(environment_sprites_list):
+    #   jumping_timer = 6
+    #Player1.rect.y -= 1
+    
+    #Als het goed is maakt het onderstaande een wall jump mogelijk
+    #Player1.rect.x += 1
+    #if Player1.rect.colliderect(environment_sprites_list):
+    #   jumping_timer = 6
+    #Player1.rect.x -= 1
+    #Player1.rect.x -= 1
+    #if Player1.rect.colliderect(environment_sprites_list):
+    #   jumping_timer = 6
+    #Player1.rect.x += 1
+    #jump_timer -= 1
     def jump(self):
         self.direction.y = self.jump_speed
 
